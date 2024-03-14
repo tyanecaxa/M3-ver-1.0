@@ -70,3 +70,13 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/EnemyGoblin/Enemy.prefab
+Assets/EnemyGoblin/Enemy.prefab.meta
+/Assets/EnemyGoblin
+/Assets/EnemyGoblin
+/Assets/Fireball
+/Assets/Player/Scr
+/Assets/Player
+/Assets/World/Image
+/Assets/World
+/Assets/World
