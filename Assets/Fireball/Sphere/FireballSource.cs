@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireballSource : MonoBehaviour
 {
+    
     public Transform targetPoint;
     public Camera cameraLink;
     public float targetInSkyDistance;

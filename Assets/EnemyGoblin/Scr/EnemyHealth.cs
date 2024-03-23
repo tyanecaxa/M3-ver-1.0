@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     public float value = 100;
+
+    public PlayerProgress playerProgress;
     public RectTransform valueRectTransform;
     public GameObject gameplayUI;
 
@@ -14,14 +16,19 @@ public class EnemyHealth : MonoBehaviour
     {
         _maxValue = value;
         DrawHealthBarEnemy();
+
+        playerProgress = FindObjectOfType<PlayerProgress>();
     }
     public void DealDamage(float damage)
     {
+        playerProgress.AddExperience(damage);
+
         value -= damage;
         if (value <= 0)
         {
             Destroy(gameObject);
         }
+        
         DrawHealthBarEnemy();
     }
 

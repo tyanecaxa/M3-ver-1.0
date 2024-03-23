@@ -511,23 +511,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5318100520556449770, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 311.6648
+      value: 240.2141
       objectReference: {fileID: 0}
     - target: {fileID: 5318100520556449770, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 38.2852
+      value: 22.3536
       objectReference: {fileID: 0}
     - target: {fileID: 5318100520556449770, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5318100520556449770, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 213
+      value: 235.36526
       objectReference: {fileID: 0}
     - target: {fileID: 5318100520556449770, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 57
+      value: 44.665817
       objectReference: {fileID: 0}
     - target: {fileID: 6888134860386377613, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_LocalScale.x
@@ -556,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 7301701270470739987, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
       propertyPath: m_fontColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670284693180557677, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
+      propertyPath: Levels.Array.size
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1308,6 +1312,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276797246}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1305206747 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7670284693180557677, guid: bd48a327865280e4aa3fc4fa1021b29e, type: 3}
+  m_PrefabInstance: {fileID: 219865689}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437aa357c3e78e44caadf34cbde1ea40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1347801528
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,6 +1680,10 @@ PrefabInstance:
       value: Enemy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8619445424430576859, guid: 26718edcb9071aa4a96080ec6a7e5635, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8619445424430576859, guid: 26718edcb9071aa4a96080ec6a7e5635, type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
       objectReference: {fileID: 951878798}
@@ -1680,6 +1699,10 @@ PrefabInstance:
       propertyPath: patrolPoints.Array.data[3]
       value: 
       objectReference: {fileID: 150370333}
+    - target: {fileID: 9036626956914796436, guid: 26718edcb9071aa4a96080ec6a7e5635, type: 3}
+      propertyPath: progress
+      value: 
+      objectReference: {fileID: 1305206747}
     - target: {fileID: 9036626956914796436, guid: 26718edcb9071aa4a96080ec6a7e5635, type: 3}
       propertyPath: gameplayUI
       value: 

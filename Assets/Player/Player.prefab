@@ -155,6 +155,7 @@ GameObject:
   - component: {fileID: 5285819003937672205}
   - component: {fileID: 8191663701760684417}
   - component: {fileID: 4649341718932513262}
+  - component: {fileID: 7670284693180557677}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -212,7 +213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 6.5
-  jumpForce: 6
 --- !u!143 &855315006640417706
 CharacterController:
   m_ObjectHideFlags: 0
@@ -284,6 +284,51 @@ MonoBehaviour:
   GrenadePrefab: {fileID: 4054381097559819964, guid: cff631b005b811944a846f281776d825, type: 3}
   GrenadeSourceTransform: {fileID: 6887037578085899579}
   force: 350
+--- !u!114 &7670284693180557677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5126381568950114944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437aa357c3e78e44caadf34cbde1ea40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Levels:
+  - fireballDamage: 10
+    granadeDamage: -1
+    experienceForTheNextLevel: 100
+  - fireballDamage: 12
+    granadeDamage: -1
+    experienceForTheNextLevel: 150
+  - fireballDamage: 15
+    granadeDamage: 30
+    experienceForTheNextLevel: 250
+  - fireballDamage: 20
+    granadeDamage: 40
+    experienceForTheNextLevel: 400
+  - fireballDamage: 28
+    granadeDamage: 60
+    experienceForTheNextLevel: 700
+  - fireballDamage: 40
+    granadeDamage: 80
+    experienceForTheNextLevel: 1200
+  - fireballDamage: 56
+    granadeDamage: 115
+    experienceForTheNextLevel: 2000
+  - fireballDamage: 74
+    granadeDamage: 150
+    experienceForTheNextLevel: 3000
+  - fireballDamage: 95
+    granadeDamage: 190
+    experienceForTheNextLevel: 4500
+  - fireballDamage: 130
+    granadeDamage: 260
+    experienceForTheNextLevel: 7000
+  experienceValueRectTransform: {fileID: 5006939555739309487}
+  levelValueTMP: {fileID: 5370403557277556615}
 --- !u!1 &5614982533170513216
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +483,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3616926445782320866}
     m_Modifications:
+    - target: {fileID: 545738395325929172, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0.0010986
+      objectReference: {fileID: 0}
+    - target: {fileID: 545738395325929172, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 545738395325929172, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 545738395325929172, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
+    - target: {fileID: 606124778398801148, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 802576338905353361, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -456,23 +521,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 802576338905353361, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 310.2587
+      value: 233.7755
       objectReference: {fileID: 0}
     - target: {fileID: 802576338905353361, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50.9408
+      value: 23.4069
       objectReference: {fileID: 0}
     - target: {fileID: 802576338905353361, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.99e-12
       objectReference: {fileID: 0}
     - target: {fileID: 802576338905353361, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 246.38293
+      value: 232.14
       objectReference: {fileID: 0}
     - target: {fileID: 802576338905353361, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 83.16637
+      value: 41.3
       objectReference: {fileID: 0}
     - target: {fileID: 2862662413095619432, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
       propertyPath: m_margin.w
@@ -608,6 +673,22 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4766441954847628751, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
   m_PrefabInstance: {fileID: 4823041645316408187}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &5006939555739309487 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 545738395325929172, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+  m_PrefabInstance: {fileID: 4823041645316408187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5370403557277556615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 606124778398801148, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
+  m_PrefabInstance: {fileID: 4823041645316408187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5551459262071633182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1145141478756251237, guid: 7c4f66b08bef8994bbdf9d0f9944fc8e, type: 3}
